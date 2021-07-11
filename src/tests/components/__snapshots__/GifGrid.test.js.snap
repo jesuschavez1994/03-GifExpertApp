@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <GifGrid /> Debe de mostrarse correctamente  1`] = `
+<Fragment>
+  <h3>
+     
+    Goku
+     
+  </h3>
+  Loading...
+  <div
+    className="card-grid"
+  />
+</Fragment>
+`;
+
+exports[`Pruebas en <GifGrid /> Deben de mostrar items cuando se cargen Imagenes useFecthGifs 1`] = `
+<Fragment>
+  <h3>
+     
+    Goku
+     
+  </h3>
+  Data Cargada
+  <div
+    className="card-grid"
+  >
+    <GifGridItem
+      id="ABC"
+      key="ABC"
+      title="title"
+      url="https://localhost/123"
+    />
+    <GifGridItem
+      id="DEF"
+      key="DEF"
+      title="title"
+      url="https://localhost/123"
+    />
+  </div>
+</Fragment>
+`;

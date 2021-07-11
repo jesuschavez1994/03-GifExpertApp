@@ -6,7 +6,7 @@ const AddCategory = ({ setCategories }) => {
     const [inputValue, setInputValu] = useState('');
 
     const handleInputChange = (e) => {
-        setInputValu(e.target.value)
+        setInputValu(e.target.value);
     }
 
     const handleSubmit = (e) => {
@@ -19,6 +19,7 @@ const AddCategory = ({ setCategories }) => {
 
     return (
         <form onSubmit = { handleSubmit }>
+             <p> { inputValue } </p>
             <input 
                 type="text"
                 value = { inputValue }
@@ -30,7 +31,7 @@ const AddCategory = ({ setCategories }) => {
 }
 
 AddCategory.propTypes = {
-    value: PropTypes.func
+    setCategories: PropTypes.func.isRequired
 }
 
 export default AddCategory;
